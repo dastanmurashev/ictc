@@ -135,7 +135,7 @@
                                   <span>{{ __('about.team.anuar.position') }}</span>
                               </div>
                           </div>
-                      </div><!-- End Team Member -->
+                      </div>
 
                       <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                           <div class="team-member">
@@ -147,7 +147,7 @@
                                   <span>{{ __('about.team.alexander.position') }}</span>
                               </div>
                           </div>
-                      </div><!-- End Team Member -->
+                      </div>
 
                       <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                           <div class="team-member">
@@ -169,6 +169,18 @@
                               <div class="member-info">
                                   <h4>{{ __('about.team.daniyar.name') }}</h4>
                                   <span>{{ __('about.team.daniyar.position') }}</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                          <div class="team-member">
+                              <div class="member-img">
+                                  <img src="assets/img/team/team-45.jpg" class="img-fluid" alt="">
+                              </div>
+                              <div class="member-info">
+                                  <h4>{{ __('about.team.marat.name') }}</h4>
+                                  <span>{{ __('about.team.marat.position') }}</span>
                               </div>
                           </div>
                       </div>
