@@ -67,8 +67,8 @@
   <section id="contact" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Ваше мнение важно:</h2>
-		  <h2>анкетирование о Казахстанско-Германской гимназии в Астане</h2>
+          <h2>{{ __('survey.title') }}</h2>
+          <h2>{{ __('survey.subtitle') }}</h2>
       </div>
     </section>
 
@@ -77,15 +77,10 @@
           <div class="container aos-init aos-animate" data-aos="fade-up">
               <div class="container aos-init aos-animate" data-aos="fade-up">
                   <div class="portfolio-description">
-                      <h2>Дорогие родители!</h2>
-                      <p>Мы рады сообщить вам о <strong>строительстве Казахстанско-Германской гимназии в Астане</strong> – школы современного формата с международным уровнем образования.
-                      </p>
-					  <p>
-					  Чтобы сделать школу максимально комфортной и отвечающей потребностям учеников, мы проводим опрос родителей. Ваш вклад поможет создать учебное заведение, которое станет лучшим выбором для Ваших детей. 
-					  </p>
-					  <p>
-					  Благодарим за участие! 
-					  </p>
+                      <h2>{{ __('survey.section_intro_title') }}</h2>
+                      <p>{{ __('survey.section_intro_p1') }}</p>
+                      <p>{{ __('survey.section_intro_p2') }}</p>
+                      <p>{{ __('survey.section_intro_p3') }}</p>
                   </div>
               </div>
           </div>
@@ -101,96 +96,106 @@
         
 		<div class="row gy-4">
 		<div class="col-md-6">
-        <label style="font-weight: bold;">1. Как Вы узнали о строительстве Казахстанско-Германской гимназии в Астане?</label><br>
-        <input type="radio" name="question_1" value="Через ОФ «Казахстанское объединение немцев «Возрождение»"> Через ОФ «Казахстанское объединение немцев «Возрождение»<br>
-        <input type="radio" name="question_1" value="Социальные сети"> Социальные сети<br>
-        <input type="radio" name="question_1" value="СМИ"> СМИ<br>
-        Другое:<input class="form-control" type="text" name="question_1_other"><br><br>
+            <label><strong>{{ __('survey.q1') }}</strong></label><br>
+            <input type="radio" name="question_1" value="{{ __('survey.q1_option1') }}"> {{ __('survey.q1_option1') }}<br>
+            <input type="radio" name="question_1" value="{{ __('survey.q1_option2') }}"> {{ __('survey.q1_option2') }}<br>
+            <input type="radio" name="question_1" value="{{ __('survey.q1_option3') }}"> {{ __('survey.q1_option3') }}<br>
+            {{ __('survey.q1_option_other') }}: <input type="text" name="question_1_other" class="form-control"><br><br>
 		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">2. Насколько Вас интересует обучение Вашего ребенка в гимназии по немецким образовательным стандартам?</label><br>
-        <input type="radio" name="question_2" value="Очень интересно"> Очень интересно<br>
-        <input type="radio" name="question_2" value="Скорее да"> Скорее да<br>
-        <input type="radio" name="question_2" value="Скорее нет"> Скорее нет<br>
-        <input type="radio" name="question_2" value="Нет"> Нет<br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">3. На каком языке Вам предпочтительно обучение в гимназии?
-</label><br>
-        <input type="radio" name="question_3" value="Казахский"> Казахский<br>
-        <input type="radio" name="question_3" value="Русский"> Русский<br>
-        <input type="radio" name="question_3" value="Немецкий"> Немецкий<br>
-        <input type="radio" name="question_3" value="Смешанный формат обучения"> Смешанный формат обучения<br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">4. Насколько для Вас важно углубленное изучение немецкого языка?</label><br>
-        <input type="radio" name="question_4" value="Очень важно"> Очень важно<br>
-        <input type="radio" name="question_4" value="Скорее важно"> Скорее важно<br>
-        <input type="radio" name="question_4" value="Неважно"> Неважно<br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">5. Какие дополнительные языки кроме казахского, русского и немецкого были бы интересны Вашему ребенку? </label><br>
-        <input type="checkbox" name="question_5[]" value="Английский"> Английский<br>
-        <input type="checkbox" name="question_5[]" value="Испанский"> Испанский<br>
-        <input type="checkbox" name="question_5[]" value="Китайский"> Китайский<br>
-        Другое: <input class="form-control"  type="text" name="question_5_other"><br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">6. Что для Вас важно при выборе частной школы? (выберите до 3-х вариантов)</label><br>
-<input type="checkbox" name="question_6[]" value="Высококвалифицированный преподавательский состав (в т.ч. носители языка)" class="limit-check"> Высококвалифицированный преподавательский состав (в т.ч. носители языка)<br>
-<input type="checkbox" name="question_6[]" value="Углубленное изучение иностранных языков" class="limit-check"> Углубленное изучение иностранных языков<br>
-<input type="checkbox" name="question_6[]" value="Современная материально-техническая база" class="limit-check"> Современная материально-техническая база<br>
-<input type="checkbox" name="question_6[]" value="Безопасность и комфорт (в т.ч. развозка детей, программы против буллинга и т.д.)" class="limit-check"> Безопасность и комфорт (в т.ч. развозка детей, программы против буллинга и т.д.)<br>
-<input type="checkbox" name="question_6[]" value="Внеклассные занятия и развитие талантов" class="limit-check"> Внеклассные занятия и развитие талантов<br>
-Другое: <input class="form-control"  type="text" name="question_6_other"><br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">7. Какие внеклассные занятия, кружки и секции Вы считаете приоритетными?</label><br>
-        <input type="checkbox" name="question_7[]" value="Наука и технологии (математический клуб, программирование, ИИ)"> Наука и технологии (математический клуб, программирование, ИИ)<br>
-        <input type="checkbox" name="question_7[]" value="Лидерские программы и soft skills (риторика, основы предпринимательства, финансовая грамотность, волонтерство)"> Лидерские программы и soft skills (риторика, основы предпринимательства, финансовая грамотность, волонтерство)<br>
-        <input type="checkbox" name="question_7[]" value="Искусство (вокал, танцы, фотография и видеопроизводство, теория искусства и истории мировых культур)"> Искусство (вокал, танцы, фотография и видеопроизводство, теория искусства и истории мировых культур)<br>
-        <input type="checkbox" name="question_7[]" value="Спорт (легкая атлетика, футбол, баскетбол, теннис, шахматы)"> Спорт (легкая атлетика, футбол, баскетбол, теннис, шахматы)<br>
-        Другое: <input class="form-control"  type="text" name="question_7_other"><br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">8. Ваши основные ожидания от новой гимназии?</label><br>
-        <input type="checkbox" name="question_8[]" value="Высокое качество образования"> Высокое качество образования<br>
-        <input type="checkbox" name="question_8[]" value="Подготовка к поступлению в зарубежные вузы"> Подготовка к поступлению в зарубежные вузы<br>
-        <input type="checkbox" name="question_8[]" value="Культурное развитие ребенка"> Культурное развитие ребенка<br>
-        Другое: <input class="form-control"  type="text" name="question_8_other"><br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">9. Какой диапазон стоимости обучения в год Вы считаете приемлемым?</label><br>
-        <input type="radio" name="question_9" value="До 2 млн тенге"> До 2 млн тенге<br>
-        <input type="radio" name="question_9" value="2-4 млн тенге"> 2-4 млн тенге<br>
-        <input type="radio" name="question_9" value="4-6 млн тенге"> 4-6 млн тенге<br>
-        Другое: <input class="form-control"  type="text" name="question_9_other"><br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">10. Какие факторы оправдывают для Вас более высокую стоимость обучения? (Можно выбрать несколько вариантов)</label><br>
-        <input type="checkbox" name="question_10[]" value="Высококвалифицированные преподаватели (в т.ч. носители языка)"> Высококвалифицированные преподаватели (в т.ч. носители языка)<br>
-        <input type="checkbox" name="question_10[]" value="Современная материально-техническая база (STEM-лаборатории, IT-классы)"> Современная материально-техническая база (STEM-лаборатории, IT-классы)<br>
-        <input type="checkbox" name="question_10[]" value="Индивидуальный подход к обучению"> Индивидуальный подход к обучению<br>
-        <input type="checkbox" name="question_10[]" value="Углубленное изучение иностранных языков"> Углубленное изучение иностранных языков<br>
-        <input type="checkbox" name="question_10[]" value="Подготовка к международным экзаменам"> Подготовка к международным экзаменам<br>
-        <input type="checkbox" name="question_10[]" value="Безопасность и комфортная инфраструктура"> Безопасность и комфортная инфраструктура<br>
-		<input type="checkbox" name="question_10[]" value="Внеклассные кружки и секции"> Внеклассные кружки и секции<br>
-		<input type="checkbox" name="question_10[]" value="Психологическая поддержка и работа с талантами"> Психологическая поддержка и работа с талантами<br>
-		<input type="checkbox" name="question_10[]" value="Программы культурного обмена и зарубежные поездки"> Программы культурного обмена и зарубежные поездки<br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">11. Возраст Вашего ребенка</label><br>
-        <input type="radio" name="question_11" value="Дошкольный возраст"> Дошкольный возраст<br>
-        <input type="radio" name="question_11" value="Начальная школа"> Начальная школа (1-4 класс)<br>
-        <input type="radio" name="question_11" value="Средняя школа"> Средняя школа (5-9 класс)<br>
-        <input type="radio" name="question_11" value="Старшая школа"> Старшая школа (10-12 класс)<br><br>
-		</div>
-		<div class="col-md-6">
-        <label style="font-weight: bold;">Если Вам интересна дополнительная информация по обучению, оставьте,  пожалуйста, Ваши данные (ФИО и контактный номер телефона). Ваши данные останутся конфиденциальными и будут использованы только для связи с Вами по вопросам поступления в гимназию</label><br>
-        <textarea class="form-control"  name="question_12"></textarea><br><br>
-		</div>
-         <div class="col-md-12 text-center">
-		<button type="submit">Отправить</button>
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q2') }}</strong></label><br>
+                <input type="radio" name="question_2" value="{{ __('survey.q2_option1') }}"> {{ __('survey.q2_option1') }}<br>
+                <input type="radio" name="question_2" value="{{ __('survey.q2_option2') }}"> {{ __('survey.q2_option2') }}<br>
+                <input type="radio" name="question_2" value="{{ __('survey.q2_option3') }}"> {{ __('survey.q2_option3') }}<br>
+                <input type="radio" name="question_2" value="{{ __('survey.q2_option4') }}"> {{ __('survey.q2_option4') }}<br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q3') }}</strong></label><br>
+                <input type="radio" name="question_3" value="{{ __('survey.q3_option1') }}"> {{ __('survey.q3_option1') }}<br>
+                <input type="radio" name="question_3" value="{{ __('survey.q3_option2') }}"> {{ __('survey.q3_option2') }}<br>
+                <input type="radio" name="question_3" value="{{ __('survey.q3_option3') }}"> {{ __('survey.q3_option3') }}<br>
+                <input type="radio" name="question_3" value="{{ __('survey.q3_option4') }}"> {{ __('survey.q3_option4') }}<br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q4') }}</strong></label><br>
+                <input type="radio" name="question_4" value="{{ __('survey.q4_option1') }}"> {{ __('survey.q4_option1') }}<br>
+                <input type="radio" name="question_4" value="{{ __('survey.q4_option2') }}"> {{ __('survey.q4_option2') }}<br>
+                <input type="radio" name="question_4" value="{{ __('survey.q4_option3') }}"> {{ __('survey.q4_option3') }}<br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q5') }}</strong></label><br>
+                <input type="checkbox" name="question_5[]" value="{{ __('survey.q5_option1') }}"> {{ __('survey.q5_option1') }}<br>
+                <input type="checkbox" name="question_5[]" value="{{ __('survey.q5_option2') }}"> {{ __('survey.q5_option2') }}<br>
+                <input type="checkbox" name="question_5[]" value="{{ __('survey.q5_option3') }}"> {{ __('survey.q5_option3') }}<br>
+                {{ __('survey.q5_option_other') }}: <input class="form-control" type="text" name="question_5_other"><br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q6') }}</strong></label><br>
+                <input type="checkbox" name="question_6[]" value="{{ __('survey.q6_option1') }}" class="limit-check"> {{ __('survey.q6_option1') }}<br>
+                <input type="checkbox" name="question_6[]" value="{{ __('survey.q6_option2') }}" class="limit-check"> {{ __('survey.q6_option2') }}<br>
+                <input type="checkbox" name="question_6[]" value="{{ __('survey.q6_option3') }}" class="limit-check"> {{ __('survey.q6_option3') }}<br>
+                <input type="checkbox" name="question_6[]" value="{{ __('survey.q6_option4') }}" class="limit-check"> {{ __('survey.q6_option4') }}<br>
+                <input type="checkbox" name="question_6[]" value="{{ __('survey.q6_option5') }}" class="limit-check"> {{ __('survey.q6_option5') }}<br>
+                {{ __('survey.q6_option_other') }}: <input class="form-control" type="text" name="question_6_other"><br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q7') }}</strong></label><br>
+                <input type="checkbox" name="question_7[]" value="{{ __('survey.q7_option1') }}"> {{ __('survey.q7_option1') }}<br>
+                <input type="checkbox" name="question_7[]" value="{{ __('survey.q7_option2') }}"> {{ __('survey.q7_option2') }}<br>
+                <input type="checkbox" name="question_7[]" value="{{ __('survey.q7_option3') }}"> {{ __('survey.q7_option3') }}<br>
+                <input type="checkbox" name="question_7[]" value="{{ __('survey.q7_option4') }}"> {{ __('survey.q7_option4') }}<br>
+                {{ __('survey.q7_option_other') }}: <input class="form-control" type="text" name="question_7_other"><br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q8') }}</strong></label><br>
+                <input type="checkbox" name="question_8[]" value="{{ __('survey.q8_option1') }}"> {{ __('survey.q8_option1') }}<br>
+                <input type="checkbox" name="question_8[]" value="{{ __('survey.q8_option2') }}"> {{ __('survey.q8_option2') }}<br>
+                <input type="checkbox" name="question_8[]" value="{{ __('survey.q8_option3') }}"> {{ __('survey.q8_option3') }}<br>
+                {{ __('survey.q8_option_other') }}: <input class="form-control" type="text" name="question_8_other"><br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q9') }}</strong></label><br>
+                <input type="radio" name="question_9" value="{{ __('survey.q9_option1') }}"> {{ __('survey.q9_option1') }}<br>
+                <input type="radio" name="question_9" value="{{ __('survey.q9_option2') }}"> {{ __('survey.q9_option2') }}<br>
+                <input type="radio" name="question_9" value="{{ __('survey.q9_option3') }}"> {{ __('survey.q9_option3') }}<br>
+                {{ __('survey.q9_option_other') }}: <input class="form-control" type="text" name="question_9_other"><br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q10') }}</strong></label><br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option1') }}"> {{ __('survey.q10_option1') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option2') }}"> {{ __('survey.q10_option2') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option3') }}"> {{ __('survey.q10_option3') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option4') }}"> {{ __('survey.q10_option4') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option5') }}"> {{ __('survey.q10_option5') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option6') }}"> {{ __('survey.q10_option6') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option7') }}"> {{ __('survey.q10_option7') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option8') }}"> {{ __('survey.q10_option8') }}<br>
+                <input type="checkbox" name="question_10[]" value="{{ __('survey.q10_option9') }}"> {{ __('survey.q10_option9') }}<br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q11') }}</strong></label><br>
+                <input type="radio" name="question_11" value="{{ __('survey.q11_option1') }}"> {{ __('survey.q11_option1') }}<br>
+                <input type="radio" name="question_11" value="{{ __('survey.q11_option2') }}"> {{ __('survey.q11_option2') }}<br>
+                <input type="radio" name="question_11" value="{{ __('survey.q11_option3') }}"> {{ __('survey.q11_option3') }}<br>
+                <input type="radio" name="question_11" value="{{ __('survey.q11_option4') }}"> {{ __('survey.q11_option4') }}<br><br>
+            </div>
+
+            <div class="col-md-6">
+                <label><strong>{{ __('survey.q12') }}</strong></label><br>
+                <textarea class="form-control" name="question_12"></textarea><br><br>
+            </div>
+
+            <div class="col-md-12 text-center">
+		    <button type="submit">{{ __('survey.button_submit') }}</button>
 		</div>
 		</div>
     </form>

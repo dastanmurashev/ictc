@@ -68,251 +68,175 @@
     </div>
 </header>
 
-
   <main class="main">
-    <section id="about-alt" class="about-alt section">
-      <div class="container section-title" data-aos="fade-up">
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start aos-init" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/serv1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                <h3>Стратегический и
-                инвестиционный консалтинг</h3>
-                <p class="fst-italic">
-                Стратегический консалтинг — комплекс услуг,
-                направленных на определение дальнейшего вектора
-                развития компании, исходя из рыночной ситуации,
-                потенциала компании и целей владельцев бизнеса.
-                </p>
-                <p class="fst-italic">
-                  Инвестиционный консалтинг — комплекс услуг по
-                  разработке инвестиционной политики, развитии
-                  активов, эффективного использования собственного
-                  капитала, а также привлечения внешних инвестиций.
-
-              </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Анализ текущего состояния компании</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Разработка и внедрение стратегического плана</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Разработка инвестиционного портфеля</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Поиск внешних источников финансирования</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Сопровождение инвестиционных проектов</span></li>
-            </ul>
-          </div>
-        </div>
-          <div class="contract-path" data-aos="fade-up">
-              <div class="step">Свяжитесь с нами <i class="bi bi-arrow-bar-right"></i></div>
-              <div class="step">Разработка технического задания <i class="bi bi-arrow-bar-right"></i></div>
-              <div class="step">Заключение договора <i class="bi bi-arrow-bar-right"></i></div>
-              <div class="step">Реализация проекта <i class="bi bi-arrow-bar-right"></i></div>
-          </div>
-      </div>
-    </section>
-
+      <!-- Стратегический и инвестиционный консалтинг -->
       <section id="about-alt" class="about-alt section">
+          <div class="container section-title" data-aos="fade-up">
+              <h2>{{ __('services.consulting_title') }}</h2>
+          </div>
           <div class="container">
               <div class="row gy-4">
                   <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-                      <img src="assets/img/serv2.jpg" class="img-fluid" alt="">
+                      <img src="{{ asset('assets/img/serv1.jpg') }}" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                          Сопровождение бизнеса</h3>
-                      <p class="fst-italic">
-                          Предоставление комплекса услуг по
-                          сопровождению бизнеса на всем жизненном цикле
-                          Вашей компании.
-                      </p>
-
+                      <p class="fst-italic">{{ __('services.consulting_desc1') }}</p>
+                      <p class="fst-italic">{{ __('services.consulting_desc2') }}</p>
                       <ul>
-                          <li><i class="bi bi-check2-all"></i> <span>Регистрация/перерегистрация</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Ликвидация юридического лица</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Договорная работа</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Правовое сопровождение</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Налоговый консалтинг</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Бухгалтерское сопровождение</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Представление интересов в суде</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Рекрутинговые услуги</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Управленческий консалтинг</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Маркетинговые услуги</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>PR сопровождение</span></li>
-
+                          @foreach(__('services.consulting_list') as $item)
+                              <li><i class="bi bi-check2-all"></i> <span>{{ $item }}</span></li>
+                          @endforeach
                       </ul>
                   </div>
               </div>
-              <div class="contract-path"  data-aos="fade-up">
-                  <div class="step">Свяжитесь с нами <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Обсуждение потребностей и ожиданий <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Формирование общего плана работ <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Заключение договора <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Реализация проекта <i class="bi bi-arrow-bar-right"></i></div>
-              </div>
-          </div>
-      </section>
 
-      <section id="about-alt" class="about-alt section">
-          <div class="container">
-              <div class="row gy-4">
-                  <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-                      <img src="assets/img/serv3.jpg" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                          ESG и Устойчивое развитие </h3>
-                      <p class="fst-italic">
-                          Предоставление комплекса услуг по ESG трансформации,
-                          включая разработку и внедрение стандартов корпоративного
-                          управления, программ по декарбонизации, сертификации,
-                          консультирование по участию в системе торговли квотами,
-                          повышения энергоэффективности и энергосбережения.
-                      </p>
-
-                      <ul>
-                          <li><i class="bi bi-check2-all"></i> <span>Оценка текущего состояния, по определению соответствия принципам ESG</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Проведение анализа по улучшению корпоративных ESG стандартов</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Разработка ESG инфокоммуникационной стратегии</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Проведение расчетов углеродного следа компании-природопользователя</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Привлечение «Зеленого финансирования» и Сертификация компаний</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Проведение энергоаудита и разработка плана по снижению энергоемкости</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Торговля квотами на выбросы парниковых газов</span></li>
-                      </ul>
-                  </div>
-              </div>
               <div class="contract-path" data-aos="fade-up">
-                  <div class="step">Свяжитесь с нами <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Обсуждение потребностей и ожиданий <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Формирование общего плана работ <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Заключение договора <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Реализация проекта <i class="bi bi-arrow-bar-right"></i></div>
+                  @foreach(__('services.consulting_steps') as $step)
+                      <div class="step">{{ $step }} <i class="bi bi-arrow-bar-right"></i></div>
+                  @endforeach
               </div>
           </div>
       </section>
 
+      <!-- Сопровождение бизнеса -->
       <section id="about-alt" class="about-alt section">
+          <div class="container section-title" data-aos="fade-up">
+              <h2>{{ __('services.business_support_title') }}</h2>
+          </div>
           <div class="container">
               <div class="row gy-4">
                   <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-                      <img src="assets/img/serv4.jpg" class="img-fluid" alt="">
+                      <img src="{{ asset('assets/img/serv2.jpg') }}" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                          Цифровая трансформация</h3>
-                      <p class="fst-italic">
-                          Повышение эффективности бизнес и производственных
-                          процессов Вашей компании за счет использования
-                          автоматизации и внедрения современных цифровых
-                          решений является одной из наших ведущих компетенций,
-                          которую мы рады предложить нашим клиентам.
-
-                      </p>
-
+                      <p class="fst-italic">{{ __('services.business_support_desc') }}</p>
                       <ul>
-                          <li><i class="bi bi-check2-all"></i> <span>Цифровой мониторинг оборудования и персонала</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Внедрение цифровых энергосберегающих технологий</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Внедрение IIOT платформ, интеграция информационных систем</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Цифровая система управления промышленной безопасности</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Проведение промышленного аудита компаний</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Автоматизация бизнес процессов предприятия</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Проведение IT-аудита и цифровая трансформация компаний</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Автоматизация технологических процессов предприятия</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Сервера и ЦОДы и облачные технологии и сервисы</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Разработка и локализация ПО любой сложности</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Техническая поддержка и сопровождение IT проектов</span></li>
+                          @foreach(__('services.business_support_list') as $item)
+                              <li><i class="bi bi-check2-all"></i> <span>{{ $item }}</span></li>
+                          @endforeach
                       </ul>
                   </div>
               </div>
+
               <div class="contract-path" data-aos="fade-up">
-                  <div class="step">Свяжитесь с нами <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Обсуждение потребностей и ожиданий <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Формирование общего плана работ <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Заключение договора <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Реализация проекта <i class="bi bi-arrow-bar-right"></i></div>
+                  @foreach(__('services.business_support_steps') as $step)
+                      <div class="step">{{ $step }} <i class="bi bi-arrow-bar-right"></i></div>
+                  @endforeach
               </div>
           </div>
       </section>
 
+      <!-- ESG и Устойчивое развитие -->
       <section id="about-alt" class="about-alt section">
+          <div class="container section-title" data-aos="fade-up">
+              <h2>{{ __('services.esg_title') }}</h2>
+          </div>
           <div class="container">
               <div class="row gy-4">
                   <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-                      <img src="assets/img/serv5.jpg" class="img-fluid" alt="">
+                      <img src="{{ asset('assets/img/serv3.jpg') }}" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                          Стратегические коммуникации</h3>
-                      <p class="fst-italic">
-                          Коммуникативная стратегия — это часть стратегии
-                          бренда или компании, целью которой является
-                          построение эффективного обмена информацией с
-                          целевыми группами для продвижения бренда
-                          компании и получения обратной связи.
-                      </p>
-
+                      <p class="fst-italic">{{ __('services.esg_desc') }}</p>
                       <ul>
-                          <li><i class="bi bi-check2-all"></i> <span>Разработка коммуникативной стратегии</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Выстраивание эффективных government relations</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Антикризисный PR</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Продвижение бренда компании на целевых рынках</span></li>
+                          @foreach(__('services.esg_list') as $item)
+                              <li><i class="bi bi-check2-all"></i> <span>{{ $item }}</span></li>
+                          @endforeach
                       </ul>
                   </div>
               </div>
+
               <div class="contract-path" data-aos="fade-up">
-                  <div class="step">Свяжитесь с нами <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Разработка технического задания <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Заключение договора <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Реализация проекта <i class="bi bi-arrow-bar-right"></i></div>
+                  @foreach(__('services.esg_steps') as $step)
+                      <div class="step">{{ $step }} <i class="bi bi-arrow-bar-right"></i></div>
+                  @endforeach
               </div>
           </div>
       </section>
 
+      <!-- Цифровая трансформация -->
       <section id="about-alt" class="about-alt section">
+          <div class="container section-title" data-aos="fade-up">
+              <h2>{{ __('services.digital_title') }}</h2>
+          </div>
           <div class="container">
               <div class="row gy-4">
                   <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-                      <img src="assets/img/serv6.jpg" class="img-fluid" alt="">
+                      <img src="{{ asset('assets/img/serv4.jpg') }}" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                      <h3>
-                          Развитие компетенций</h3>
-                      <p class="fst-italic">
-                          Развитие профессиональных компетенций — это
-                          процесс совершенствования знаний, навыков,
-                          личностных способностей и качеств сотрудника.
-                          Не менее важен процесс развития управленческих
-                          компетенций руководителей и владельцев бизнеса.
-                      </p>
-
+                      <p class="fst-italic">{{ __('services.digital_desc') }}</p>
                       <ul>
-                          <li><i class="bi bi-check2-all"></i> <span>Бизнес-туры для владельцев и топов по всему миру</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Стажировки, тренинги и краткосрочные курсы </span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Организация обучения без отрыва от работы</span></li>
-                          <li><i class="bi bi-check2-all"></i> <span>Реализация проектов в сфере образования </span></li>
+                          @foreach(__('services.digital_list') as $item)
+                              <li><i class="bi bi-check2-all"></i> <span>{{ $item }}</span></li>
+                          @endforeach
                       </ul>
                   </div>
               </div>
+
               <div class="contract-path" data-aos="fade-up">
-                  <div class="step">Свяжитесь с нами <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Разработка технического задания <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Заключение договора <i class="bi bi-arrow-bar-right"></i></div>
-                  <div class="step">Реализация проекта <i class="bi bi-arrow-bar-right"></i></div>
+                  @foreach(__('services.digital_steps') as $step)
+                      <div class="step">{{ $step }} <i class="bi bi-arrow-bar-right"></i></div>
+                  @endforeach
               </div>
           </div>
       </section>
-    
 
+      <!-- Стратегические коммуникации -->
+      <section id="about-alt" class="about-alt section">
+          <div class="container section-title" data-aos="fade-up">
+              <h2>{{ __('services.communication_title') }}</h2>
+          </div>
+          <div class="container">
+              <div class="row gy-4">
+                  <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                      <img src="{{ asset('assets/img/serv5.jpg') }}" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                      <p class="fst-italic">{{ __('services.communication_desc') }}</p>
+                      <ul>
+                          @foreach(__('services.communication_list') as $item)
+                              <li><i class="bi bi-check2-all"></i> <span>{{ $item }}</span></li>
+                          @endforeach
+                      </ul>
+                  </div>
+              </div>
 
+              <div class="contract-path" data-aos="fade-up">
+                  @foreach(__('services.communication_steps') as $step)
+                      <div class="step">{{ $step }} <i class="bi bi-arrow-bar-right"></i></div>
+                  @endforeach
+              </div>
+          </div>
+      </section>
 
-   
+      <!-- Развитие компетенций -->
+      <section id="about-alt" class="about-alt section">
+          <div class="container section-title" data-aos="fade-up">
+              <h2>{{ __('services.competence_title') }}</h2>
+          </div>
+          <div class="container">
+              <div class="row gy-4">
+                  <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+                      <img src="{{ asset('assets/img/serv6.jpg') }}" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                      <p class="fst-italic">{{ __('services.competence_desc') }}</p>
+                      <ul>
+                          @foreach(__('services.competence_list') as $item)
+                              <li><i class="bi bi-check2-all"></i> <span>{{ $item }}</span></li>
+                          @endforeach
+                      </ul>
+                  </div>
+              </div>
 
-    
-
-   
-
-  
-    
+              <div class="contract-path" data-aos="fade-up">
+                  @foreach(__('services.competence_steps') as $step)
+                      <div class="step">{{ $step }} <i class="bi bi-arrow-bar-right"></i></div>
+                  @endforeach
+              </div>
+          </div>
+      </section>
 
   </main>
 

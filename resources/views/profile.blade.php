@@ -68,117 +68,92 @@
     </div>
 </header>
 
-  <main class="main">
-    <section id="about-alt" class="about-alt section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>ИНЖЕНЕРНЫЙ КОНСАЛТИНГ</h2>
-  </div>
-    </section>
-	   <section id="portfolio-details" class="team section light-background">
-          <div class="container aos-init aos-animate" data-aos="fade-up">
-              <div class="container" data-aos="fade-up">
-                  <div class="portfolio-description">
-                      <h2>ТОО «Международный Центр Технологий и Компетенций» (ICTC)</h2>
-                      <p>
-                          предлагает комплекс услуг по бестраншейному восстановлению трубопроводов. Наличие парка необходимой техники, оборудования и собственного производства позволяют нам выполнять задачи любой сложности. Санация трубопроводов методом полимерного рукава при правильном подходе и соблюдении всех условий может проводиться и в зимнее время, что немаловажно для работ, не имеющих сроков сезонности. Мы работаем по всему Казахстану круглый год.
-                      </p>
-                  </div>
-              </div>
-			  			  			  <div data-aos="fade-up">
-              <div class="call-to-action" style="padding: 20px 0px 0px;">
-              <a class="cta-btn" href="/storage/buklet.pdf" target="_blank">СКАЧАТЬ БУКЛЕТ</a>
-            </div>
-            </div>
-          </div>
-      </section>
-	  
-	  <section id="about-alt" class="about-alt section">
-      <div class="container section-title" data-aos="fade-up">
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start aos-init" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/profile1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                <h3>Метод восстановления полимерным рукавом</h3>
-                <p class="fst-italic">
-                Это эффективное и современное решение, в результате которого производится ремонт изношенного участка с минимальным количеством земляных работ, риска повреждения смежных сетей и нарушения благоустройства в месте проведения работ.
-                </p>
-                <p class="fst-italic">
-                  Основным принципом выполнения работ по данной технологии «re-lining (ре-лайнинг) – повторная прокладка» является восстановление участка трубопровода, путём введения в него заранее подготовленного рукава через существующие колодцы и его полимеризация во внутренней части восстанавливаемого трубопровода водяным воздействием.
+ <main class="main">
+     <section id="about-alt" class="about-alt section">
+         <div class="container section-title" data-aos="fade-up">
+             <h2>{{ __('profile.title') }}</h2>
+         </div>
+     </section>
 
-              </p>
-			  <h3>Преимущества восстановления полимерным рукавом</h3>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Высокая скорость проведения работ, ввиду отсутствия необходимости проведения большого объема земляных работ</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Восстановление независимо от среды нахождения трубопровода, подлежащего реконструкции: бетон, грунт, камень, дно реки, под зданием и т.д.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Отсутствие необходимости в работах по демонтажу старого трубопровода и нарушении благоустройства</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Возможность восстановления участков большой протяжённости непрерывно (герметизация стыков)</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Высокая степень адаптации новой трубы под изменяющееся сечение старой (восстановление без заужения проектных диаметров)</span></li>
-				<li><i class="bi bi-check2-all"></i> <span>По согласованию с заказчиком толщина стенки рукава может быть увеличена, что придаёт восстанавливаемому участку повышенную прочность</span></li>
-				<li><i class="bi bi-check2-all"></i> <span>Диаметр санируемой трубы от 150 мм до 2000 мм</span></li>
-				<li><i class="bi bi-check2-all"></i> <span>Собственное производство в Астане</span></li>
-				<li><i class="bi bi-check2-all"></i> <span>Возможность установки изделия на любой удалённости от производства</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-	  
-	  	  <section id="about-alt" class="about-alt section">
-      <div class="container section-title" data-aos="fade-up">
-      </div>
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start aos-init" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/profile2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-                <h3>Области применения</h3>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Трубопроводы канализационные напорные и самотечные</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Трубопроводы безнапорные ливневые</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Трубопроводы напорные сетей водоснабжения различного назначения</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-	 
-	  
-<section id="contact" class="call-to-action section accent-background">
-  <div class="container aos-init aos-animate" data-aos="fade-up">
-    <div class="row gy-4 align-items-center">
-      
-      <!-- Левая часть с заголовком -->
-      <div class="col-lg-6">
-        <h3>Отправить заявку на расчет</h3>
-      </div>
+     <section id="portfolio-details" class="team section light-background">
+         <div class="container aos-init aos-animate" data-aos="fade-up">
+             <div class="portfolio-description">
+                 <h2>{{ __('profile.company_name') }}</h2>
+                 <p>{{ __('profile.company_description') }}</p>
+             </div>
+             <div data-aos="fade-up">
+                 <div class="call-to-action" style="padding: 20px 0px 0px;">
+                     <a class="cta-btn" href="/storage/buklet.pdf" target="_blank">{{ __('profile.download_booklet') }}</a>
+                 </div>
+             </div>
+         </div>
+     </section>
 
-      <!-- Правая часть с формой -->
-      <div class="col-lg-6">
-        <form action="{{ route('send.mailp') }}" method="post" style="margin-top: 78px;">
-          @csrf
-          <!-- Инпуты в один ряд -->
-          <div class="d-flex gap-3">
-            <input class="form-control" type="text" name="pr_name" placeholder="ФИО">
-            <input class="form-control" type="text" name="pr_number" placeholder="Введите номер">
-          </div>
+     <section id="about-alt" class="about-alt section">
+         <div class="container">
+             <div class="row gy-4">
+                 <div class="col-lg-6 position-relative align-self-start aos-init" data-aos="fade-up" data-aos-delay="100">
+                     <img src="/assets/img/profile1.jpg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                     <h3>{{ __('profile.method_title') }}</h3>
+                     <p class="fst-italic">{{ __('profile.method_intro1') }}</p>
+                     <p class="fst-italic">{{ __('profile.method_intro2') }}</p>
+                     <h3>{{ __('profile.method_advantages_title') }}</h3>
+                     <ul>
+                         @foreach(__('profile.method_advantages') as $advantage)
+                             <li><i class="bi bi-check2-all"></i> <span>{{ $advantage }}</span></li>
+                         @endforeach
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </section>
 
-          <!-- Кнопки -->
-          <div class="d-flex gap-3 mt-3">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7a6GCKrgzLybcaCbGPQa9VXedf0HOuDF-F8AxnPPiOrt31A/viewform" target="_blank" class="cta-btn">ПРОЙТИ ОПРОС</a>
-            <button type="submit" class="cta-btn" style="color: #0e3e7f">ОТПРАВИТЬ</button>
-          </div>
-        </form>
-      </div>
+     <section id="about-alt" class="about-alt section">
+         <div class="container">
+             <div class="row gy-4">
+                 <div class="col-lg-6 position-relative align-self-start aos-init" data-aos="fade-up" data-aos-delay="100">
+                     <img src="/assets/img/profile2.jpg" class="img-fluid" alt="">
+                 </div>
+                 <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+                     <h3>{{ __('profile.application_title') }}</h3>
+                     <ul>
+                         @foreach(__('profile.application_fields') as $field)
+                             <li><i class="bi bi-check2-all"></i> <span>{{ $field }}</span></li>
+                         @endforeach
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </section>
 
-    </div>
-  </div>
-</section>
+     <section id="contact" class="call-to-action section accent-background">
+         <div class="container aos-init aos-animate" data-aos="fade-up">
+             <div class="row gy-4 align-items-center">
+                 <div class="col-lg-6">
+                     <h3>{{ __('profile.request_title') }}</h3>
+                 </div>
 
-  </main>
+                 <div class="col-lg-6">
+                     <form action="{{ route('send.mailp') }}" method="post" style="margin-top: 78px;">
+                         @csrf
+                         <div class="d-flex gap-3">
+                             <input class="form-control" type="text" name="pr_name" placeholder="{{ __('profile.full_name_placeholder') }}">
+                             <input class="form-control" type="text" name="pr_number" placeholder="{{ __('profile.phone_placeholder') }}">
+                         </div>
+
+                         <div class="d-flex gap-3 mt-3">
+                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7a6GCKrgzLybcaCbGPQa9VXedf0HOuDF-F8AxnPPiOrt31A/viewform" target="_blank" class="cta-btn">{{ __('profile.take_survey') }}</a>
+                             <button type="submit" class="cta-btn" style="color: #0e3e7f">{{ __('profile.send') }}</button>
+                         </div>
+                     </form>
+                 </div>
+
+             </div>
+         </div>
+     </section>
+ </main>
 
  <footer id="footer" class="footer light-background">
 

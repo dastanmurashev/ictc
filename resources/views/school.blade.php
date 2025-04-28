@@ -48,7 +48,7 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="/" class="active">{{ __('menu.home') }}</a></li>
+                <li><a href="/">{{ __('menu.home') }}</a></li>
                 <li><a href="/about">{{ __('menu.about') }}</a></li>
                 <li><a href="/school" class="active">{{ __('menu.school') }}</a></li>
                 <li><a href="/profile">{{ __('menu.profile') }}</a></li>
@@ -67,30 +67,26 @@
   <section id="contact" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Казахстанско-немецкая школа</h2>
+          <h2>{{ __('school.title') }}</h2>
       </div>
     </section>
 <section id="portfolio-details" class="team section light-background">
           <div class="container aos-init aos-animate" data-aos="fade-up">
               <div class="container" data-aos="fade-up">
                   <div class="portfolio-description">
-                      <h2>Казахстанско-немецкая школа в Астане — первая в Казахстане и Центральной Азии, где обучение будет проводиться по немецким образовательным стандартам</h2>
-                      <p>
-                          Этот уникальный проект создаст образовательную среду, объединяющую лучшие практики немецкой системы обучения и соответствующую высоким международным стандартам качества. Школа станет частью глобальной сети немецких зарубежных школ, предоставляя обучение на немецком языке для 600 казахстанских учеников.
- 						</p> 
-					  <p>
-Учебная программа будет разработана таким образом, чтобы выпускники могли получить аттестат, признаваемый как в Казахстане, так и в Германии, открывая перед ними широкие перспективы для поступления в ведущие мировые университеты.
-                      </p>
+                      <h2>{{ __('school.heading') }}</h2>
+                      <p>{{ __('school.description_1') }}</p>
+                      <p>{{ __('school.description_2') }}</p>
                   </div>
               </div>
 			  			  <div data-aos="fade-up">
               <div class="call-to-action" style="padding: 20px 0px 0px;">
-              <a class="cta-btn" href="/school-news">ВСЕ НОВОСТИ ПРОЕКТА</a>
-				  <a class="cta-btn" href="/survey">ПРОЙТИ ОПРОС</a>
+                  <a class="cta-btn" href="/school-news">{{ __('school.button_news') }}</a>
+                  <a class="cta-btn" href="/survey">{{ __('school.button_survey') }}</a>
             </div>
             </div>
 			  <div class="container section-title" data-aos="fade-up"> <br><br><br>
-      <h2>НОВОСТИ ПРОЕКТА</h2>
+                  <h2>{{ __('school.project_news') }}</h2>
 				  
     <div class="row gy-4">
         @foreach ($news2 as $school => $post)

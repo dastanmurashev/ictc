@@ -66,8 +66,8 @@
 <section id="portfolio-details" class="portfolio-details section">
   <div class="container aos-init aos-animate" data-aos="fade-up">
     <div class="container section-title" data-aos="fade-up">
-      <h2>О нас</h2>
-      <p>О компании</p>
+        <h2>{{ __('about.title') }}</h2>
+        <p>{{ __('about.subtitle') }}</p>
     </div>
   </div>
 </section>
@@ -76,13 +76,8 @@
           <div class="container aos-init aos-animate" data-aos="fade-up">
               <div class="container" data-aos="fade-up">
                   <div class="portfolio-description">
-                      <h2>Международный центр технологий и компетенций</h2>
-                      <p>
-                          (International Center for Technology and Competences) – консалтинговая компания, основанная в 2013 г.,
-                          предоставляющая широкий спектр услуг и экспертизы клиентам в различных отраслях и сферах деятельности. За годы практики мы помогли многим нашим
-                          клиентам стать более эффективными и успешными. Команда ICTС совместно с сетью международных партнеров готова оказать поддержку клиентам, как в
-                          Казахстане, так и за его пределами.
-                      </p>
+                      <h2>{{ __('about.company_name') }}</h2>
+                      <p>{{ __('about.company_description') }}</p>
                   </div>
               </div>
           </div>
@@ -93,40 +88,29 @@
               <div class="container" data-aos="fade-up">
                   <div class="row gy-4">
                       <div class="col-lg-4 content aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <h2>Миссия</h2>
+                          <h2>{{ __('about.mission_title') }}</h2>
                           <ul>
-                          <li>Миссия — содействовать развитию наших клиентов на основе индивидуального подхода, выбора наиболее эффективных методов и современных знаний.
-                          </li>
+                            <li>{{ __('about.mission_text') }}</li>
                           </ul>
                       </div>
                       <div class="col-lg-4 content aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <h2>Ценности</h2>
+                          <h2>{{ __('about.values_title') }}</h2>
                           <ul>
-                          <li>Клиентоориентированность – Мы выстраиваем партнерские отношения с клиентами и предлагаем решения, которые максимально соответствуют их потребностям.
-                          </li>
-                          <li>Инновации и качество – Стремимся внедрять передовые технологии и обеспечивать высокий стандарт предоставляемых услуг.
-                          </li>
-                          <li>Ответственность и доверие – Действуем прозрачно и с уважением к каждому клиенту и партнеру.
-                          </li>
-                          <li>Профессионализм и развитие – Наша команда постоянно совершенствует свои навыки и делится опытом с клиентами.
-                          </li>
-                          <li>Глобальный подход – Объединяем международную экспертизу и локальное понимание рынка для достижения оптимальных результатов.
-                          </li>
+                              <li>{{ __('about.values.client_focus') }}</li>
+                              <li>{{ __('about.values.innovation') }}</li>
+                              <li>{{ __('about.values.responsibility') }}</li>
+                              <li>{{ __('about.values.professionalism') }}</li>
+                              <li>{{ __('about.values.global_approach') }}</li>
                           </ul>
                       </div>
                       <div class="col-lg-4 content aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                          <h2>Принципы</h2>
+                          <h2>{{ __('about.principles_title') }}</h2>
                           <ul>
-                          <li>Индивидуальный подход – Подбираем персонализированные стратегии и решения для каждого клиента.
-                            </li>
-                          <li>Эффективное взаимодействие – Поддерживаем открытые и продуктивные коммуникации с клиентами и партнерами.
-                            </li>
-                          <li>Прозрачность и честность – Открыто и честно обсуждаем возможности и риски каждого проекта.
-                            </li>
-                          <li>Непрерывное развитие – Следуем лучшим мировым практикам и постоянно учимся новому.
-                            </li>
-                          <li>Устойчивость и долгосрочность – Стремимся создавать решения, которые приносят клиентам долгосрочные выгоды.
-                            </li>
+                              <li>{{ __('about.principles.individual') }}</li>
+                              <li>{{ __('about.principles.communication') }}</li>
+                              <li>{{ __('about.principles.transparency') }}</li>
+                              <li>{{ __('about.principles.development') }}</li>
+                              <li>{{ __('about.principles.sustainability') }}</li>
                           </ul>
                       </div>
                   </div>
@@ -138,7 +122,7 @@
           <div class="container aos-init aos-animate" data-aos="fade-up">
               <div class="container" data-aos="fade-up">
                   <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-                      <h2>Наша команда</h2>
+                      <h2>{{ __('about.team_title') }}</h2>
                   </div>
                   <div class="row gy-4">
                       <div class="col-lg-3 col-md-6 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
@@ -147,8 +131,8 @@
                                   <img src="assets/img/team/team-11.jpg" class="img-fluid" alt="">
                               </div>
                               <div class="member-info">
-                                  <h4>Ануар Кенжигалиев</h4>
-                                  <span>Генеральный директор</span>
+                                  <h4>{{ __('about.team.anuar.name') }}</h4>
+                                  <span>{{ __('about.team.anuar.position') }}</span>
                               </div>
                           </div>
                       </div><!-- End Team Member -->
@@ -159,8 +143,8 @@
                                   <img src="assets/img/team/team-22.jpg" class="img-fluid" alt="">
                               </div>
                               <div class="member-info">
-                                  <h4>Александр Кайль</h4>
-                                  <span>Руководитель проекта «Строительство Казахстанско-немецкой школы в городе Астана»</span>
+                                  <h4>{{ __('about.team.alexander.name') }}</h4>
+                                  <span>{{ __('about.team.alexander.position') }}</span>
                               </div>
                           </div>
                       </div><!-- End Team Member -->
@@ -171,8 +155,8 @@
                                   <img src="assets/img/team/team-33.jpg" class="img-fluid" alt="">
                               </div>
                               <div class="member-info">
-                                  <h4>Айжан Туякбаева</h4>
-                                  <span>Менеджер проекта «Строительство Казахстанско-немецкой школы в городе Астана»</span>
+                                  <h4>{{ __('about.team.aizhan.name') }}</h4>
+                                  <span>{{ __('about.team.aizhan.position') }}</span>
                               </div>
                           </div>
                       </div>
@@ -183,8 +167,8 @@
                                   <img src="assets/img/team/team-44.jpg" class="img-fluid" alt="">
                               </div>
                               <div class="member-info">
-                                  <h4>Данияр Рахимов</h4>
-                                  <span>Менеджер проекта «Бестраншейное восстановление трубопроводов»</span>
+                                  <h4>{{ __('about.team.daniyar.name') }}</h4>
+                                  <span>{{ __('about.team.daniyar.position') }}</span>
                               </div>
                           </div>
                       </div>
