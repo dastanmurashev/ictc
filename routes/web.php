@@ -1,18 +1,20 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\NewsController;
-use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ContactController;
-use Illuminate\Http\Request;
-use App\Http\Controllers\SurveyController;
 use App\Http\Controllers\ContactpController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\SurveyController;
+use Illuminate\Support\Facades\Route;
 
 
-
-
-
-
+Route::get('lang/{locale}', function ($locale) {
+    if (!in_array($locale, ['kk', 'ru'])) {
+        abort(400);
+    }
+    session(['locale' => $locale]);
+    app()->setLocale($locale);
+    return redirect()->back();
+})->name('lang.switch');
 
 Route::get('/', function () {
     return view('welcome');
