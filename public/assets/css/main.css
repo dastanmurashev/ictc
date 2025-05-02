@@ -115,7 +115,7 @@ h6 {
 
 @media (max-width: 768px) {
 	.language-switcher {
-	display: none;
+/* 	display: none; */
 	}
 }
 
