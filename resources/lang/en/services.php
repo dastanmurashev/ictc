@@ -1,0 +1,117 @@
+<?php
+
+return [
+    'title' => 'Our Services',
+
+    'consulting_title' => 'Strategic and Investment Consulting',
+    'consulting_desc1' => 'Strategic consulting - a range of services aimed at determining the future direction of a company based on market conditions, company potential, and business owners\' goals.',
+    'consulting_desc2' => 'Investment consulting - a set of services for the development of investment policy, asset development, efficient use of equity capital, as well as attracting external investments.',
+    'consulting_list' => [
+        'Analysing the current state of the company',
+        'Development and implementation of a strategic plan',
+        'Development of an investment portfolio',
+        'Searching for external sources of financing',
+        'Investment project management',
+    ],
+    'consulting_steps' => [
+        'Contact us',
+        'Development of technical specifications',
+        'Contract signing',
+        'Project implementation',
+    ],
+
+    'business_support_title' => 'Business Support',
+    'business_support_desc' => 'Providing a range of business support services throughout your company\'s lifecycle.',
+    'business_support_list' => [
+        'Company registration/re-registration',
+        'Liquidation of legal entities',
+        'Contract work',
+        'Legal support',
+        'Tax consulting',
+        'Accounting support',
+        'Legal representation in court',
+        'Recruitment services',
+        'Management consulting',
+        'Marketing services',
+        'PR support',
+    ],
+    'business_support_steps' => [
+        'Contact us',
+        'Discussion of needs and expectations',
+        'Formation of a general work plan',
+        'Contract signing',
+        'Project implementation',
+    ],
+
+    'esg_title' => 'ESG and Sustainable Development',
+    'esg_desc' => 'Providing a range of ESG transformation services, including the development and implementation of corporate governance standards, decarbonization programs, certification, consulting on participation in the quota trading system, and improving energy efficiency and conservation.',
+    'esg_list' => [
+        'Assessment of the current state for compliance with ESG principles',
+        'Analysis for improving corporate ESG standards',
+        'Development of an ESG communication strategy',
+        'Calculation of the company\'s carbon footprint',
+        'Attracting "Green Financing" and Company Certification',
+        'Energy audit and development of an energy intensity reduction plan',
+        'Greenhouse gas emissions quota trading',
+    ],
+    'esg_steps' => [
+        'Contact us',
+        'Discussion of needs and expectations',
+        'Formation of a general work plan',
+        'Contract signing',
+        'Project implementation',
+    ],
+
+    'digital_title' => 'Digital Transformation',
+    'digital_desc' => 'Improving the efficiency of your company\'s business and production processes through automation and the implementation of modern digital solutions is one of our core competencies that we are pleased to offer our clients.',
+    'digital_list' => [
+        'Digital monitoring of equipment and personnel',
+        'Implementation of digital energy-saving technologies',
+        'Implementation of IIOT platforms, integration of information systems',
+        'Digital industrial safety management system',
+        'Conducting industrial audits of companies',
+        'Business process automation',
+        'IT audit and digital transformation of companies',
+        'Automation of technological processes',
+        'Servers, data centers, and cloud technologies and services',
+        'Development and localization of software of any complexity',
+        'Technical support and maintenance of IT projects',
+    ],
+    'digital_steps' => [
+        'Contact us',
+        'Discussion of needs and expectations',
+        'Formation of a general work plan',
+        'Contract signing',
+        'Project implementation',
+    ],
+
+    'communication_title' => 'Strategic Communications',
+    'communication_desc' => 'Communication strategy is part of a brand or company strategy aimed at building effective information exchange with target groups to promote the company\'s brand and receive feedback.',
+    'communication_list' => [
+        'Development of a communication strategy',
+        'Building effective government relations',
+        'Crisis PR',
+        'Company brand promotion in target markets',
+    ],
+    'communication_steps' => [
+        'Contact us',
+        'Development of technical specifications',
+        'Contract signing',
+        'Project implementation',
+    ],
+
+    'competence_title' => 'Competence Development',
+    'competence_desc' => 'The development of professional competencies is the process of improving an employee\'s knowledge, skills, personal abilities, and qualities. Equally important is the development of managerial competencies for executives and business owners.',
+    'competence_list' => [
+        'Business tours for owners and top managers worldwide',
+        'Internships, trainings, and short-term courses',
+        'Organization of on-the-job training',
+        'Implementation of projects in the field of education',
+    ],
+    'competence_steps' => [
+        'Contact us',
+        'Development of technical specifications',
+        'Contract signing',
+        'Project implementation',
+    ],
+];
