@@ -2,9 +2,17 @@
 
 return [
     'categories' => 'CATEGORIES',
-    'contacts' => 'CONTACT INFORMATION',
-    'address_legal' => 'Legal Address: Astana, Mailin Street, Building 14A, Office 41',
-    'address_real' => 'Physical Address: Astana, T. Bigeldinov Street, 12, Office 204',
+    'contacts' => 'Contact us',
+    'address' => 'Address',
+    'address_legal' => 'Address: 14A, Maylin street, office 41, Astana',
+    'address_real' => 'Address: 12, T. Begildinov, office 204, Astana',
     'phone' => 'Phone:',
-    'email' => 'Email:',
+    'email' => 'E-mail:',
+    'form' => [
+        'name' => 'Your name',
+        'email' => 'E-Mail address',
+        'title' => 'Subject',
+        'description' => 'Message',
+        'submit' => 'Submit'
+    ]
 ];

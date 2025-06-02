@@ -73,7 +73,7 @@
   <section id="contact" class="contact section">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>КОНТАКТЫ</h2>
+        <h2>{{ __('footer.contacts') }}</h2>
       </div>
     </section>
 
@@ -93,16 +93,16 @@
             <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
-                <h3>Адрес</h3>
-                <p><strong>Юридический адрес:</strong> г.Астана, ул. Майлина, д.14А, офис 41</p>
-                <p><strong>Фактический адрес:</strong> г.Астана, ул. Т. Бигельдинова, 12, офис 204</p>
+                <h3>{{ __('footer.address') }}</h3>
+                <p>{{ __('footer.address_legal') }}</p>
+                <p>{{ __('footer.address_real') }}</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Телефон</h3>
+                <h3>{{ __('footer.phone') }}</h3>
                 <p>+7 701 888 7897</p>
 				  <p>+7 777 522 0767</p>
               </div>
@@ -111,7 +111,7 @@
             <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Почта</h3>
+                <h3>{{ __('footer.email') }}</h3>
                 <p>info@ictc.kz</p>
               </div>
             </div><!-- End Info Item -->
@@ -124,19 +124,19 @@
     @csrf
     <div class="row gy-4">
         <div class="col-md-6">
-            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+            <input type="text" name="name" class="form-control" placeholder="{{ __('footer.form.name') }}" required>
         </div>
         <div class="col-md-6">
-            <input type="email" class="form-control" name="email" placeholder="Почта" required>
+            <input type="email" class="form-control" name="email" placeholder="{{ __('footer.form.email') }}" required>
         </div>
         <div class="col-md-12">
-            <input type="text" class="form-control" name="subject" placeholder="Заголовок" required>
+            <input type="text" class="form-control" name="subject" placeholder="{{ __('footer.form.title') }}" required>
         </div>
         <div class="col-md-12">
-            <textarea class="form-control" name="message" rows="6" placeholder="Сообщение" required></textarea>
+            <textarea class="form-control" name="message" rows="6" placeholder="{{ __('footer.form.description') }}" required></textarea>
         </div>
         <div class="col-md-12 text-center">
-            <button type="submit">Отправить</button>
+            <button type="submit">{{ __('footer.form.submit') }}</button>
         </div>
     </div>
 </form>
